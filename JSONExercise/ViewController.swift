@@ -22,14 +22,16 @@ class ViewController: UIViewController {
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else { return }
         
         let session = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let urlResponse = response {
-                print(urlResponse)
-            } 
+//            if let urlResponse = response {
+//                print(urlResponse)
+//            }
             if let urlData = data {
-                print(urlData)
+//                print(urlData)
                 do {
-                    let json = try JSONSerialization.jsonObject(with: urlData, options: [])
+                    let json = try JSONSerialization.jsonObject(with: urlData, options: .mutableContainers)
                     print(json)
+//                    let infoResponse = try JSONDecoder.decode(UserResponse, from: urlData)
+//                    let info =
                 } catch { }
             }
         }
@@ -45,12 +47,12 @@ class ViewController: UIViewController {
         guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else { return }
         request.httpBody = httpBody
         let session = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if let urlResponse = response {
-                print(urlResponse)
-            }
+//            if let urlResponse = response {
+//                print(urlResponse)
+//            }
             if let urlData = data {
                 do {
-                    let json = try JSONSerialization.jsonObject(with: urlData, options: [])
+                    let json = try JSONSerialization.jsonObject(with: urlData, options: .mutableContainers)
                     print(json)
                 } catch { }
             }
