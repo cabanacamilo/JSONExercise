@@ -8,14 +8,6 @@
 
 import Foundation
 
-struct UserResponse: Decodable {
-    var response: User
-}
-
-struct User: Decodable {
-    var user: [UserInfo]
-}
-
 struct UserInfo: Decodable {
     var email: String
     var id: Int

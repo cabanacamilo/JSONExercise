@@ -14,6 +14,10 @@
 		2F6B3E0F2336BB1100AEAB5F /* JSONExercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B3E0D2336BB1100AEAB5F /* JSONExercise.xcdatamodeld */; };
 		2F6B3E112336BB1300AEAB5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F6B3E102336BB1300AEAB5F /* Assets.xcassets */; };
 		2F6B3E142336BB1300AEAB5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6B3E122336BB1300AEAB5F /* LaunchScreen.storyboard */; };
+		2FBE8C06233C009B0078B7EB /* TableViewUsersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE8C05233C009B0078B7EB /* TableViewUsersCell.swift */; };
+		2FBE8C08233C014E0078B7EB /* ViewUsersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE8C07233C014E0078B7EB /* ViewUsersController.swift */; };
+		2FBE8C0A233C05BB0078B7EB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE8C09233C05BB0078B7EB /* TableViewCell.swift */; };
+		2FBE8C0C233C065E0078B7EB /* ViewUserInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE8C0B233C065E0078B7EB /* ViewUserInfoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		2F6B3E102336BB1300AEAB5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F6B3E132336BB1300AEAB5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F6B3E152336BB1300AEAB5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FBE8C05233C009B0078B7EB /* TableViewUsersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewUsersCell.swift; sourceTree = "<group>"; };
+		2FBE8C07233C014E0078B7EB /* ViewUsersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUsersController.swift; sourceTree = "<group>"; };
+		2FBE8C09233C05BB0078B7EB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2FBE8C0B233C065E0078B7EB /* ViewUserInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUserInfoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,10 @@
 				2F6B3E152336BB1300AEAB5F /* Info.plist */,
 				2F6B3E0D2336BB1100AEAB5F /* JSONExercise.xcdatamodeld */,
 				2F1EF623233910C000669122 /* data.swift */,
+				2FBE8C05233C009B0078B7EB /* TableViewUsersCell.swift */,
+				2FBE8C07233C014E0078B7EB /* ViewUsersController.swift */,
+				2FBE8C09233C05BB0078B7EB /* TableViewCell.swift */,
+				2FBE8C0B233C065E0078B7EB /* ViewUserInfoController.swift */,
 			);
 			path = JSONExercise;
 			sourceTree = "<group>";
@@ -141,9 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FBE8C06233C009B0078B7EB /* TableViewUsersCell.swift in Sources */,
+				2FBE8C0C233C065E0078B7EB /* ViewUserInfoController.swift in Sources */,
+				2FBE8C08233C014E0078B7EB /* ViewUsersController.swift in Sources */,
 				2F6B3E092336BB1100AEAB5F /* ViewController.swift in Sources */,
 				2F6B3E072336BB1100AEAB5F /* AppDelegate.swift in Sources */,
 				2F6B3E0F2336BB1100AEAB5F /* JSONExercise.xcdatamodeld in Sources */,
+				2FBE8C0A233C05BB0078B7EB /* TableViewCell.swift in Sources */,
 				2F1EF624233910C000669122 /* data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
