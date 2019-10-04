@@ -18,6 +18,9 @@
 		2FBE8C08233C014E0078B7EB /* ViewUsersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE8C07233C014E0078B7EB /* ViewUsersController.swift */; };
 		2FBE8C0A233C05BB0078B7EB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE8C09233C05BB0078B7EB /* TableViewCell.swift */; };
 		2FBE8C0C233C065E0078B7EB /* ViewUserInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE8C0B233C065E0078B7EB /* ViewUserInfoController.swift */; };
+		2FDE3F5023479448008533F3 /* ViewStarWarsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE3F4F23479448008533F3 /* ViewStarWarsController.swift */; };
+		2FDE3F5223479488008533F3 /* TableViewStarWarsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE3F5123479488008533F3 /* TableViewStarWarsCell.swift */; };
+		2FDE3F5423479887008533F3 /* StarWars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE3F5323479887008533F3 /* StarWars.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		2FBE8C07233C014E0078B7EB /* ViewUsersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUsersController.swift; sourceTree = "<group>"; };
 		2FBE8C09233C05BB0078B7EB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		2FBE8C0B233C065E0078B7EB /* ViewUserInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUserInfoController.swift; sourceTree = "<group>"; };
+		2FDE3F4F23479448008533F3 /* ViewStarWarsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStarWarsController.swift; sourceTree = "<group>"; };
+		2FDE3F5123479488008533F3 /* TableViewStarWarsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewStarWarsCell.swift; sourceTree = "<group>"; };
+		2FDE3F5323479887008533F3 /* StarWars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,8 @@
 		2F6B3E052336BB1100AEAB5F /* JSONExercise */ = {
 			isa = PBXGroup;
 			children = (
+				2FDE3F4E2347941F008533F3 /* StarWars */,
+				2FDE3F4D234793E7008533F3 /* Users */,
 				2F6B3E062336BB1100AEAB5F /* AppDelegate.swift */,
 				2F6B3E082336BB1100AEAB5F /* ViewController.swift */,
 				2F6B3E0A2336BB1100AEAB5F /* Main.storyboard */,
@@ -73,13 +81,30 @@
 				2F6B3E122336BB1300AEAB5F /* LaunchScreen.storyboard */,
 				2F6B3E152336BB1300AEAB5F /* Info.plist */,
 				2F6B3E0D2336BB1100AEAB5F /* JSONExercise.xcdatamodeld */,
-				2F1EF623233910C000669122 /* data.swift */,
-				2FBE8C05233C009B0078B7EB /* TableViewUsersCell.swift */,
-				2FBE8C07233C014E0078B7EB /* ViewUsersController.swift */,
-				2FBE8C09233C05BB0078B7EB /* TableViewCell.swift */,
-				2FBE8C0B233C065E0078B7EB /* ViewUserInfoController.swift */,
 			);
 			path = JSONExercise;
+			sourceTree = "<group>";
+		};
+		2FDE3F4D234793E7008533F3 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				2FBE8C05233C009B0078B7EB /* TableViewUsersCell.swift */,
+				2FBE8C09233C05BB0078B7EB /* TableViewCell.swift */,
+				2FBE8C07233C014E0078B7EB /* ViewUsersController.swift */,
+				2FBE8C0B233C065E0078B7EB /* ViewUserInfoController.swift */,
+				2F1EF623233910C000669122 /* data.swift */,
+			);
+			name = Users;
+			sourceTree = "<group>";
+		};
+		2FDE3F4E2347941F008533F3 /* StarWars */ = {
+			isa = PBXGroup;
+			children = (
+				2FDE3F4F23479448008533F3 /* ViewStarWarsController.swift */,
+				2FDE3F5123479488008533F3 /* TableViewStarWarsCell.swift */,
+				2FDE3F5323479887008533F3 /* StarWars.swift */,
+			);
+			path = StarWars;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FDE3F5223479488008533F3 /* TableViewStarWarsCell.swift in Sources */,
 				2FBE8C06233C009B0078B7EB /* TableViewUsersCell.swift in Sources */,
 				2FBE8C0C233C065E0078B7EB /* ViewUserInfoController.swift in Sources */,
+				2FDE3F5023479448008533F3 /* ViewStarWarsController.swift in Sources */,
 				2FBE8C08233C014E0078B7EB /* ViewUsersController.swift in Sources */,
+				2FDE3F5423479887008533F3 /* StarWars.swift in Sources */,
 				2F6B3E092336BB1100AEAB5F /* ViewController.swift in Sources */,
 				2F6B3E072336BB1100AEAB5F /* AppDelegate.swift in Sources */,
 				2F6B3E0F2336BB1100AEAB5F /* JSONExercise.xcdatamodeld in Sources */,
@@ -309,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WK8JGF9VN3;
 				INFOPLIST_FILE = JSONExercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,6 +356,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WK8JGF9VN3;
 				INFOPLIST_FILE = JSONExercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
