@@ -10,6 +10,7 @@ import UIKit
 
 var users = [UserInfo]()
 var starWars = [StarWarsInfo]()
+var pokemon = Pokemon(count: 0, next: "", results: [Result(name: "", url: "")])
 
 class ViewController: UIViewController {
     
@@ -18,6 +19,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         downloadUsers()
         downloadStarWars()
+        downloadPokemon()
     }
 
     @IBAction func getButton(_ sender: UIButton) {
@@ -94,6 +96,39 @@ class ViewController: UIViewController {
                             info.hair_color = results[i]["hair_color"] as! String
                             starWars.append(info)
                         }
+                    }
+                } catch { }
+            }
+        }
+        session.resume()
+    }
+    
+    func downloadPokemon() {
+        guard let url = URL(string: "https://pokeapi.co/api/v2/pokemon") else { return }
+        let session = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let urlData = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: urlData, options: []) as? [String: Any]
+                    if let count = json?["count"] as? Int {
+                        pokemon.count = count
+                    }
+                    if let next = json?["next"] as? String{
+                        pokemon.next = next
+                    }
+                    if let results = json?["results"] as? Array<Dictionary<String, String>> {
+                        var resultArray = [Result(name: "", url: "")]
+                        var result = Result(name: "", url: "")
+                        for i in results.indices {
+                            if let name = results[i]["name"] {
+                                result.name = name
+                            }
+                            if let url = results[i]["url"] {
+                                result.url = url
+                            }
+                            resultArray.append(result)
+                        }
+                        resultArray.remove(at: 0)
+                        pokemon.results = resultArray
                     }
                 } catch { }
             }
